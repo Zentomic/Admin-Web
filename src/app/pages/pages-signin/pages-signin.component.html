@@ -1,0 +1,30 @@
+<div class="sign-container">
+  <div class="sign-background">
+
+  </div>
+  <md-card class="sign-card">
+    <md-card-title><img style="height: 64px;" src="assets/img/logo-full.svg"></md-card-title>
+    <md-card-subtitle>Sign in to continue.</md-card-subtitle>
+    <br>
+    <md-card-content>
+      <md-input-container>
+        <input md-input type="text" placeholder="Username or email address" #username>
+      </md-input-container>
+      <md-input-container>
+        <input md-input type="password" placeholder="Password" value="" #password>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button color="primary" (click)="clickLogin()">
+        <span class="fa fa-user"></span> Login
+      </button>
+      <button md-raised-button class="color-google" (click)="clickGoogle()">
+        <span class="fa fa-google"></span> Google
+      </button>
+      <button md-raised-button class="color-facebook" (click)="clickFacebook()">
+        <span class="fa fa-facebook"></span> Facebook
+      </button>
+    </md-card-actions>
+    <p>Don't have an account? <a href="#/pages-signup">Sign Up</a></p>
+  </md-card>
+</div>

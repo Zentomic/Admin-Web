@@ -1,0 +1,74 @@
+<div class="page-content">
+ 
+
+  <md-card class="page-card">
+    <md-card-title>Member Location</md-card-title>
+    <md-card-subtitle>List of last known locations</md-card-subtitle>
+    <md-card-content>
+      <div class="containerX">
+        <div fxLayout="row" class="coloredContainerX box">
+          <div fxFlex.gt-sm="50" fxFlex="50"> <lk-maps-googlemap></lk-maps-googlemap> </div>
+          <div fxFlex.gt-sm="50" fxFlex="50">
+
+            <md-card class="page-card">
+              <md-card-content>
+                <input type='text'
+                       style='padding:8px;margin:15px auto;width:30%;'
+                       placeholder='Type to filter the name column...'
+                       (keyup)='updateFilter($event)'>
+                <ngx-datatable #mydatatable
+                               class="material  vertical-scroll"
+                               [headerHeight]="50"
+                               [limit]="1"
+                               [sortType]="'multi'"
+                               [columnMode]="'force'"
+                               [scrollbarV]="true"
+                               [footerHeight]="50"
+                               [rowHeight]="35"          
+                               [rows]="rows">
+                  <ngx-datatable-column name="Time">
+                    <template ngx-datatable-cell-template let-value="value" let-row="row">
+                      <span title="Double click to edit"
+                            (dblclick)="editing[row.$$index + '-time'] = true"
+                            *ngIf="!editing[row.$$index + '-time']">
+                        {{value}}
+                      </span>
+                      <input autofocus
+                             (blur)="updateValue($event, 'time', value, row)"
+                             *ngIf="editing[row.$$index + '-time']"
+                             type="text"
+                             [value]="value" />
+                    </template>
+                  </ngx-datatable-column>
+                  <ngx-datatable-column name="Long">
+                    <template ngx-datatable-cell-template let-row="row" let-value="value">
+                      <span title="Double click to edit"
+                            (dblclick)="editing[row.$$index + '-long'] = true"
+                            *ngIf="!editing[row.$$index + '-long']">
+                        {{value}}
+                      </span>
+
+                    </template>
+                  </ngx-datatable-column>
+                  <ngx-datatable-column name="Lat">
+                    <template ngx-datatable-cell-template let-value="value">
+                      {{value}}
+                    </template>
+                  </ngx-datatable-column>
+
+                </ngx-datatable>
+
+
+              </md-card-content>
+            </md-card>
+
+
+          </div>
+        </div>
+      </div>
+    </md-card-content>
+  </md-card>
+
+
+
+</div>
