@@ -47,6 +47,7 @@ import { PagesInvoiceComponent } from './pages/pages-invoice/pages-invoice.compo
 import { PagesNotfoundComponent } from './pages/pages-notfound/pages-notfound.component';
 import { PagesSigninComponent } from './pages/pages-signin/pages-signin.component';
 import { PagesSignupComponent } from './pages/pages-signup/pages-signup.component';
+import { PagesSMSComponent } from './pages/pages-sms/pages-sms.component';
 import { AppsCalendarComponent } from './pages/apps-calendar/apps-calendar.component';
 import { AppsExplorerComponent } from './pages/apps-explorer/apps-explorer.component';
 import { AppsMailComponent } from './pages/apps-mail/apps-mail.component';
@@ -63,8 +64,8 @@ export const ROUTES: Routes = [
   {
     path: '',
 //    redirectTo: '/dashboard',   // original
-    //redirectTo: '/pages-signin',
-    redirectTo: '/pages-signup',
+    redirectTo: '/pages-signin',
+    //redirectTo: '/pages-signup',
     pathMatch: 'full'
   },
   // Emergency loading, need to import component form file.
@@ -286,6 +287,10 @@ export const ROUTES: Routes = [
     component: PagesSignupComponent
   },
   {
+    path: 'pages-sms',
+    component: PagesSMSComponent
+  },
+  {
     path: 'apps-calendar',
     component: AppsCalendarComponent
   },
@@ -298,3 +303,5 @@ export const ROUTES: Routes = [
     component: AppsMailComponent
   }
 ];
+
+

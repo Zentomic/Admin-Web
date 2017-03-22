@@ -321,7 +321,7 @@
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\app.routes.ts" />
     <TypeScriptCompile Include="src\app\app.service.ts" />
-    <TypeScriptCompile Include="src\app\auth.service.ts" />
+    <TypeScriptCompile Include="src\app\ext-browser-xhr.ts" />
     <TypeScriptCompile Include="src\app\pages\apps-calendar\apps-calendar.component.ts" />
     <TypeScriptCompile Include="src\app\pages\apps-explorer\apps-explorer.component.ts" />
     <TypeScriptCompile Include="src\app\pages\apps-mail\apps-mail.component.ts" />

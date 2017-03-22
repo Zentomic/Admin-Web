@@ -1,1 +1,2 @@
 C:\project\Nadim\Admin\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\project\Nadim\Admin-web\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache

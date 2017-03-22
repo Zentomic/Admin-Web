@@ -6,18 +6,18 @@
     <br>
     <md-card-content>
       <md-input-container>
-        <input md-input type="text" placeholder="Full Name" value="">
+        <input md-input type="text" placeholder="Full Name" value="" [(ngModel)]="user.fullname">
+      </md-input-container>
+      <!--<md-input-container>
+        <input md-input type="text" placeholder="Username" value="" [(ngModel)]="user.username">
+      </md-input-container>-->
+      <md-input-container>
+        <input md-input type="email" placeholder="Email" value="" [(ngModel)]="user.email">
       </md-input-container>
       <md-input-container>
-        <input md-input type="text" placeholder="Username" value="">
+        <input md-input type="password" placeholder="Password" value="" [(ngModel)]="user.password">
       </md-input-container>
-      <md-input-container>
-        <input md-input type="email" placeholder="Email" value="">
-      </md-input-container>
-      <md-input-container>
-        <input md-input type="password" placeholder="Password" value="">
-      </md-input-container>
-      <md-checkbox>
+      <md-checkbox [(ngModel)]="user.agreement">
         <h5>
           <small>Agree the terms and conditions</small>
         </h5>
@@ -27,8 +27,8 @@
       <button md-raised-button color="primary" (click)="onEvent('submit')">SUBMIT</button>
       <br>
       <br>
-      <button md-icon-button (click)="onEvent('facebook')" ><i class="fa fa-2x fa-facebook"></i></button>
-      <button md-icon-button  (click)="onEvent('google')" ><i class="fa fa-2x fa-google"></i></button>
+      <button md-icon-button (click)="onEvent('facebook')"><i class="fa fa-2x fa-facebook"></i></button>
+      <button md-icon-button (click)="onEvent('google')"><i class="fa fa-2x fa-google"></i></button>
       <!--<button md-icon-button  (click)="OnEvent('facebook')" ><i class="fa fa-2x fa-twitter"></i></button>
       <button md-icon-button  (click)="OnEvent('facebook')" ><i class="fa fa-2x fa-wechat"></i></button>-->
     </md-card-actions>

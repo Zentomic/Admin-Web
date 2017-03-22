@@ -57,6 +57,7 @@ import { PagesInvoiceComponent } from './pages/pages-invoice/pages-invoice.compo
 import { PagesNotfoundComponent } from './pages/pages-notfound/pages-notfound.component';
 import { PagesSigninComponent } from './pages/pages-signin/pages-signin.component';
 import { PagesSignupComponent } from './pages/pages-signup/pages-signup.component';
+import { PagesSMSComponent } from './pages/pages-sms/pages-sms.component';
 import { AppsCalendarComponent } from './pages/apps-calendar/apps-calendar.component';
 import { AppsExplorerComponent } from './pages/apps-explorer/apps-explorer.component';
 import { AppsMailComponent } from './pages/apps-mail/apps-mail.component';
@@ -75,7 +76,6 @@ import { CustomFormsModule } from 'ng2-validation';
 import { DashboardEdgeComponent } from './pages/dashboard-edge/dashboard-edge.component';
 import { DialogThemeComponent } from './shared/dialog/dialog-theme/dialog-theme.component';
 import { TranslateStaticLoader, TranslateLoader, TranslateModule } from 'ng2-translate';
-import { Auth } from './auth.service';
 
 
 //---- my code
@@ -145,6 +145,7 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     PagesNotfoundComponent,
     PagesSigninComponent,
     PagesSignupComponent,
+    PagesSMSComponent,
     AppsCalendarComponent,
     AppsExplorerComponent,
     AppsMailComponent,
@@ -186,8 +187,7 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
   ],
   providers: [
     // Global service (Global state)
-    AppService,
-    Auth
+    AppService
   ],
   entryComponents: [
     // Customize dialog must be import here.
