@@ -1,0 +1,37 @@
+<div class="page-content">
+
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxFlex>
+    <md-card class="page-card" fxFlex>
+      <md-card-content>
+        <div fxLayout="row" fxFlex>
+          <div fxFlex="50">
+            <h3>{{user.fullname}} {{user.displayname}}</h3>
+            <span md-line>{{user.email}}</span>
+            <span md-line>{{user.Location}}</span>
+            <p md-line>
+              <button md-raised-button color="primary">Follow</button>
+            </p>
+          </div>
+          <div fxFlex="50" style="text-align: right;margin: auto;">
+            <img src="assets/img/avatar.jpg" height="96" width="96" style="border-radius: 50%;">
+          </div>
+        </div>
+      </md-card-content>
+      <hr>
+      <div class="bottom-block" fxLayout="row" fxFlex>
+        <div class="bottom-content" fxFlex>
+          <p>54</p>
+          <span>POST</span>
+        </div>
+        <div class="bottom-content" fxFlex>
+          <p>4235</p>
+          <span>FOLLOWERS</span>
+        </div>
+        <div class="bottom-content" fxFlex>
+          <p>892</p>
+          <span>WATCH</span>
+        </div>
+      </div>
+    </md-card>
+  </div>
+</div>

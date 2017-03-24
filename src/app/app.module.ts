@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, Http } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
+import { ZentomicAuthService } from './service/zentomic.auth';
 import { MaterialModule } from '@angular/material';
 import { Md2Module } from 'md2/module';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -57,7 +58,9 @@ import { PagesInvoiceComponent } from './pages/pages-invoice/pages-invoice.compo
 import { PagesNotfoundComponent } from './pages/pages-notfound/pages-notfound.component';
 import { PagesSigninComponent } from './pages/pages-signin/pages-signin.component';
 import { PagesSignupComponent } from './pages/pages-signup/pages-signup.component';
+import { PagesSignoutComponent } from './pages/pages-signout/pages-signout.component';
 import { PagesSMSComponent } from './pages/pages-sms/pages-sms.component';
+import { PagesProfileComponent } from './pages/pages-profile/profile.component';
 import { AppsCalendarComponent } from './pages/apps-calendar/apps-calendar.component';
 import { AppsExplorerComponent } from './pages/apps-explorer/apps-explorer.component';
 import { AppsMailComponent } from './pages/apps-mail/apps-mail.component';
@@ -74,7 +77,6 @@ import { WidgetModule } from './shared/widget/widget.module';
 import { QuillModule } from 'ngx-quill/src/quill/quill.module';
 import { CustomFormsModule } from 'ng2-validation';
 import { DashboardEdgeComponent } from './pages/dashboard-edge/dashboard-edge.component';
-import { DialogThemeComponent } from './shared/dialog/dialog-theme/dialog-theme.component';
 import { TranslateStaticLoader, TranslateLoader, TranslateModule } from 'ng2-translate';
 
 
@@ -92,7 +94,6 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     // Page
     AppComponent,
     DialogExampleComponent,
-    DialogThemeComponent,
     ComponentDialogComponent,
     DashboardComponent,
     DashboardEdgeComponent,
@@ -145,7 +146,9 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     PagesNotfoundComponent,
     PagesSigninComponent,
     PagesSignupComponent,
+    PagesSignoutComponent,
     PagesSMSComponent,
+    PagesProfileComponent,
     AppsCalendarComponent,
     AppsExplorerComponent,
     AppsMailComponent,
@@ -187,12 +190,12 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
   ],
   providers: [
     // Global service (Global state)
-    AppService
+    AppService,
+    ZentomicAuthService
   ],
   entryComponents: [
     // Customize dialog must be import here.
     DialogExampleComponent,
-    DialogThemeComponent,
   ],
   bootstrap: [AppComponent]
 })

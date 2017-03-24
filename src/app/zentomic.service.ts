@@ -1,6 +1,6 @@
 ﻿/**
  * link of RESTful service Setting
- *
+ * Code by Tony Nguyen
  */
 
 //const ZENTOMIC_SERVER = "http://localhost:9000";

@@ -1,25 +1,31 @@
-<div class="sign-container">
-  <div class="sign-background"></div>
-  <md-card class="sign-card">
-    <md-card-title><img style="height: 64px;" src="assets/img/logo-full.svg"></md-card-title>
-    <md-card-subtitle>Please input fone num and text for send sms.</md-card-subtitle>
-    <br>
-    <md-card-content>
-      <md-input-container>
-        <input md-input type="text" placeholder="Phone number" value="" [(ngModel)]="sms.tofone">
-      </md-input-container>
-     
-      <md-input-container>
-        <input md-input type="text" placeholder="Text" value="" [(ngModel)]="sms.message">
-      </md-input-container>
-    
-    
-    </md-card-content>
-    <md-card-actions>
-      <button md-raised-button color="primary" (click)="onEvent('submit')">SMS</button>
+<div class="page-content">
 
-      <button md-raised-button color="secondary" (click)="onEvent('home')">Home</button>
-      <br>
-    </md-card-actions>
-  </md-card>
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxFlex>
+    <div class="sign-container">
+      <div class="sign-background"></div>
+      <md-card class="sign-card">
+        <md-card-title><img style="height: 64px;" src="assets/img/logo-full.svg"></md-card-title>
+        <md-card-subtitle>Please input fone num and text for send sms.</md-card-subtitle>
+        <br>
+        <md-card-content>
+          <md-input-container>
+            <input md-input type="text" placeholder="Phone number" value="" [(ngModel)]="sms.tofone">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input type="text" placeholder="Text" value="" [(ngModel)]="sms.message">
+          </md-input-container>
+
+
+        </md-card-content>
+        <md-card-actions>
+          <button md-raised-button color="primary" (click)="onEvent('submit')">SMS</button>
+
+          <button md-raised-button color="secondary" (click)="onEvent('home')">Home</button>
+          <br>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
 </div>
+

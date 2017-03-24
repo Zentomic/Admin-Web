@@ -5,7 +5,7 @@ import { ZENTOMIC_SERVICE } from '../../zentomic.service';
 import { Http, URLSearchParams, Response} from  "@angular/http";
 
 @Component({
-  selector: 'lk-pages-sms',
+  selector: 'lk-profile',
   templateUrl: './pages-sms.component.html',
   styleUrls: [
     './pages-sms.component.scss'
@@ -24,13 +24,13 @@ export class PagesSMSComponent implements OnInit {
   //-------------------------------------------------------------------
   constructor(public router: Router, private appService: AppService, private http: Http) {
     appService.getState().topnavTitle = 'SMS';
-    appService.getState().pageFullscreen = true;
+    // appService.getState().pageFullscreen = true;
     var $this = this;
     // event handler
     this.events = {
       'home': function () {
         //custom code here
-        $this.router.navigate(['pages-signin']);
+        $this.router.navigate(['dashboard']);
       },
       'submit': function () {
         //custom code here
@@ -45,7 +45,7 @@ export class PagesSMSComponent implements OnInit {
   }
 
   ngOnInit() {
-   }
+  }
 
   ngOnDestroy() {
     this.appService.getState().pageFullscreen = false;
@@ -57,8 +57,7 @@ export class PagesSMSComponent implements OnInit {
    */
   onEvent(event) {
     console.log("click " + event);
-    if (this.events)
-    {
+    if (this.events) {
       this.events[event]();// true handler here please jump to it
     }
   }
@@ -73,7 +72,7 @@ export class PagesSMSComponent implements OnInit {
     params.set('tofone', this.sms.tofone);
     params.set('message', this.sms.message);
 
-    var response = this.http.get(this.url_sms, { search: params} );
+    var response = this.http.get(this.url_sms, { search: params });
 
     response
       .map(response => response.json())
@@ -85,9 +84,10 @@ export class PagesSMSComponent implements OnInit {
         //-----------
         if (!(data == null)) {
 
-          
+
           //custom code
         }
       });
   }
+
 }

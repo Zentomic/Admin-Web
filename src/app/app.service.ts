@@ -28,14 +28,14 @@ export class AppService {
 
   // Set your states default value.
   private state: InternalStateType = {
-    appName: 'Lokra UI Starter',
+    appName: 'Zentomic Web Admin',
     darkMode: false,
     defaultLang: 'en',
     topnavTitle: 'Lokra',
     messagePanelOpen: false,
     sidenavOpen: false,
     sidenavMode: 'over',
-    sidenavCollapse: true,
+    sidenavCollapse: false,
     pageFullscreen: false,
     pageFooter: false,
     initial: false,

@@ -1,6 +1,7 @@
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AppService } from '../../app.service';
+import { ZentomicAuthService} from '../../service/zentomic.auth';
 import { Http, URLSearchParams, Response} from  "@angular/http";
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
@@ -24,7 +25,7 @@ export class PagesSigninComponent implements OnInit, OnDestroy {
   //-----------------------------------------------------------------------------------------------------------------------
   user: any = { email: '', password: '' };
 
-  constructor(private appService: AppService, private http: Http, private router: Router) {
+  constructor(private appService: AppService, private zentomicAuthService: ZentomicAuthService,private http: Http, private router: Router) {
   
     appService.getState().topnavTitle = 'Sign In';
     appService.getState().pageFullscreen = true;
@@ -70,7 +71,7 @@ export class PagesSigninComponent implements OnInit, OnDestroy {
       {
         
         // redirect to main page
-        this.router.navigate(['/pages-sms']);
+        this.loginSuccess(data);
       }
     });
 
@@ -102,7 +103,7 @@ export class PagesSigninComponent implements OnInit, OnDestroy {
             // push it to service loginer for use later
 
             // redirect to main page
-            this.router.navigate(['/pages-sms']);
+            this.loginSuccess(data);
           }
         });
     }
@@ -122,6 +123,20 @@ export class PagesSigninComponent implements OnInit, OnDestroy {
     }
     console.error(errMsg);
     return Observable.throw(errMsg);
+  }
+
+  private loginSuccess = (data) => {
+    // put responde data to ZentomicAuthService
+    try {
+      this.zentomicAuthService.setState("error", data.error);
+      this.zentomicAuthService.setState("data", data.data?data.data:data.message);
+    }
+    catch (e){ }
+    // shoudl have the check here before redirect
+    
+
+    // redirect if ok 
+    this.router.navigate(['/dashboard']);
   }
 
   //---------------------------------------------------------------------------------------------------------------

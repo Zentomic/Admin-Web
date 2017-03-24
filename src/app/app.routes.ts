@@ -48,11 +48,15 @@ import { PagesNotfoundComponent } from './pages/pages-notfound/pages-notfound.co
 import { PagesSigninComponent } from './pages/pages-signin/pages-signin.component';
 import { PagesSignupComponent } from './pages/pages-signup/pages-signup.component';
 import { PagesSMSComponent } from './pages/pages-sms/pages-sms.component';
+import { PagesProfileComponent } from './pages/pages-profile/profile.component';
 import { AppsCalendarComponent } from './pages/apps-calendar/apps-calendar.component';
 import { AppsExplorerComponent } from './pages/apps-explorer/apps-explorer.component';
 import { AppsMailComponent } from './pages/apps-mail/apps-mail.component';
 import { MapsVectorExampleComponent } from './pages/maps-vector/maps-vector.component';
 import { DashboardEdgeComponent } from './pages/dashboard-edge/dashboard-edge.component';
+
+import { PagesSignoutComponent } from './pages/pages-signout/pages-signout.component';
+
 
 /**
  * Router Setting
@@ -63,10 +67,13 @@ export const ROUTES: Routes = [
   // This default is router like '/'.
   {
     path: '',
-//    redirectTo: '/dashboard',   // original
+//    redirectTo: '/',   // original
     redirectTo: '/pages-signin',
-    //redirectTo: '/pages-signup',
     pathMatch: 'full'
+  },
+  {
+    path: 'signout',
+    component: PagesSignoutComponent
   },
   // Emergency loading, need to import component form file.
   {
@@ -289,6 +296,10 @@ export const ROUTES: Routes = [
   {
     path: 'pages-sms',
     component: PagesSMSComponent
+  },
+  {
+    path: 'pages-profile',
+    component: PagesProfileComponent
   },
   {
     path: 'apps-calendar',

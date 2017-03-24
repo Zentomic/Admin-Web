@@ -129,16 +129,18 @@
     <Content Include="src\app\pages\pages-invoice\pages-invoice.component.html" />
     <Content Include="src\app\pages\pages-lockscreen\pages-lockscreen.component.html" />
     <Content Include="src\app\pages\pages-notfound\pages-notfound.component.html" />
+    <Content Include="src\app\pages\pages-sms\pages-sms.component.html" />
     <Content Include="src\app\pages\pages-signin\pages-signin.component.html" />
+    <Content Include="src\app\pages\pages-signout\pages-signout.component.html" />
     <Content Include="src\app\pages\pages-signup\pages-signup.component.html" />
     <Content Include="src\app\pages\tables-basic\tables-basic.component.html" />
     <Content Include="src\app\pages\member-location\member-location.component.html" />
     <Content Include="src\app\pages\tables-dynamic\tables-dynamic.component.html" />
+    <Content Include="src\app\pages\pages-profile\profile.component.html" />
     <Content Include="src\app\pages\widgets\widgets.component.html" />
     <Content Include="src\app\shared\chart\chart-js\chart-js.component.html" />
     <Content Include="src\app\shared\chart\chart-peity\chart-peity.component.html" />
     <Content Include="src\app\shared\dialog\dialog-example\dialog-example.component.html" />
-    <Content Include="src\app\shared\dialog\dialog-theme\dialog-theme.component.html" />
     <Content Include="src\app\shared\maps\maps-vector\maps-vector.component.html" />
     <Content Include="src\app\shared\media\media-clappr\media-clappr.component.html" />
     <Content Include="src\app\shared\schedule\schedule-calendar\schedule-calendar.component.html" />
@@ -277,7 +279,6 @@
     <Content Include="src\app\shared\chart\chart-js\chart-js.component.scss" />
     <Content Include="src\app\shared\chart\chart-peity\chart-peity.component.scss" />
     <Content Include="src\app\shared\dialog\dialog-example\dialog-example.component.scss" />
-    <Content Include="src\app\shared\dialog\dialog-theme\dialog-theme.component.scss" />
     <Content Include="src\app\shared\maps\maps-vector\maps-vector.component.scss" />
     <Content Include="src\app\shared\media\media-clappr\media-clappr.component.scss" />
     <Content Include="src\app\shared\schedule\schedule-calendar\schedule-calendar.component.scss" />
@@ -291,6 +292,10 @@
     <Content Include="src\styles.scss" />
     <Content Include="src\tsconfig.json" />
     <Content Include="src\app\pages\member-location\member-location.component.scss" />
+    <Content Include="RUN.bat" />
+    <Content Include="src\app\pages\pages-signout\pages-signout.component.scss" />
+    <Content Include="src\app\pages\pages-profile\profile.component.scss" />
+    <Content Include="src\app\pages\pages-sms\pages-sms.component.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -369,17 +374,20 @@
     <TypeScriptCompile Include="src\app\pages\pages-invoice\pages-invoice.component.ts" />
     <TypeScriptCompile Include="src\app\pages\pages-lockscreen\pages-lockscreen.component.ts" />
     <TypeScriptCompile Include="src\app\pages\pages-notfound\pages-notfound.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\pages-sms\pages-sms.component.ts" />
     <TypeScriptCompile Include="src\app\pages\pages-signin\pages-signin.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\pages-signout\pages-signout.component.ts" />
     <TypeScriptCompile Include="src\app\pages\pages-signup\pages-signup.component.ts" />
     <TypeScriptCompile Include="src\app\pages\tables-basic\tables-basic.component.ts" />
     <TypeScriptCompile Include="src\app\pages\member-location\member-location.component.ts" />
     <TypeScriptCompile Include="src\app\pages\tables-dynamic\tables-dynamic.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\pages-profile\profile.component.ts" />
     <TypeScriptCompile Include="src\app\pages\widgets\widgets.component.ts" />
+    <TypeScriptCompile Include="src\app\service\zentomic.auth.ts" />
     <TypeScriptCompile Include="src\app\shared\chart\chart-js\chart-js.component.ts" />
     <TypeScriptCompile Include="src\app\shared\chart\chart-peity\chart-peity.component.ts" />
     <TypeScriptCompile Include="src\app\shared\chart\chart.module.ts" />
     <TypeScriptCompile Include="src\app\shared\dialog\dialog-example\dialog-example.component.ts" />
-    <TypeScriptCompile Include="src\app\shared\dialog\dialog-theme\dialog-theme.component.ts" />
     <TypeScriptCompile Include="src\app\shared\maps\maps-vector\maps-vector.component.ts" />
     <TypeScriptCompile Include="src\app\shared\maps\maps.module.ts" />
     <TypeScriptCompile Include="src\app\shared\media\media-clappr\media-clappr.component.ts" />
@@ -391,6 +399,7 @@
     <TypeScriptCompile Include="src\app\shared\widget\chart-tile\chart-tile.component.ts" />
     <TypeScriptCompile Include="src\app\shared\widget\info-tile\info-tile.component.ts" />
     <TypeScriptCompile Include="src\app\shared\widget\widget.module.ts" />
+    <TypeScriptCompile Include="src\app\zentomic.service.ts" />
     <TypeScriptCompile Include="src\environments\environment.cordova.ts" />
     <TypeScriptCompile Include="src\environments\environment.electron.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
