@@ -5,11 +5,11 @@
       <md-card-content>
         <div fxLayout="row" fxFlex>
           <div fxFlex="50">
-            <h3>{{user.fullname}} {{user.displayname}}</h3>
+            <h3>{{user.fullname}} {{user.displayName}}</h3>
             <span md-line>{{user.email}}</span>
             <span md-line>{{user.Location}}</span>
             <p md-line>
-              <button md-raised-button color="primary">Follow</button>
+              <button md-raised-button color="primary"  (click)="onEvent('checkin')">Checkin</button>
             </p>
           </div>
           <div fxFlex="50" style="text-align: right;margin: auto;">
@@ -33,5 +33,37 @@
         </div>
       </div>
     </md-card>
+
+  </div>
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxFlex>
+    <div class="sign-container">
+      <div class="sign-background"></div>
+      <md-card class="sign-card">
+        <md-card-title>Setting Notifier</md-card-title>
+        <md-card-subtitle></md-card-subtitle>
+        <br>
+        <md-card-content>
+          <md-input-container>
+            <input md-input type="text" placeholder="Notifier name" value="{{notifier.Fullname}}" [(ngModel)]="notifier.Fullname">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input type="text" placeholder="Phone number" value="{{notifier.Fone}}" [(ngModel)]="notifier.Fone">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input type="text" placeholder="Email" value="{{notifier.Email}}" [(ngModel)]="notifier.Email">
+          </md-input-container>
+
+
+        </md-card-content>
+        <md-card-actions>
+          <button md-raised-button color="primary" (click)="onEvent('save')">Save</button>
+
+         
+          <br>
+        </md-card-actions>
+      </md-card>
+    </div>
   </div>
 </div>
