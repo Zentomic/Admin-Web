@@ -10,6 +10,15 @@ import { AppService } from '../../app.service';
 })
 export class ComponentDatePickerComponent implements OnInit {
 
+  //data 
+  date: any;
+  time: any;
+  datetime: any;
+  disabled: any;
+  maxDate: any;
+  minDate: any;
+
+
   constructor(private appService: AppService) {
     appService.getState().topnavTitle = 'Date Picker';
   }

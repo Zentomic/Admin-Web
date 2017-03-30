@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   activeSubMenuName: string;
   date: Date;
 
-  constructor(private appService: AppService,
+  constructor(public appService: AppService,
               private dialog: MdDialog,
               private translate: TranslateService,
               private router: Router) {
