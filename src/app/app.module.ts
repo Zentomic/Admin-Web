@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AppService } from './app.service';
 import { ZentomicAuthService } from './service/zentomic.auth';
 import { MaterialModule } from '@angular/material';
-import { Md2Module } from 'md2/module';
+import { Md2Module } from 'md2';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, NoPreloading } from '@angular/router';
 import { DialogExampleComponent } from './shared/dialog/dialog-example/dialog-example.component';

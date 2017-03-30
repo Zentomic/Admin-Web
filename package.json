@@ -97,7 +97,7 @@
     "karma-jasmine": "^1.1.0",
     "karma-remap-istanbul": "^0.6.0",
     "material-design-icon-fonts": "^3.0.1",
-    "md2": "0.0.17",
+    "md2": "github:pix4d/md2-dist",
     "moment": "^2.18.1",
     "morgan": "^1.8.1",
     "ng2-file-upload": "^1.2.0",
