@@ -11,14 +11,14 @@
           <md-card-content>
 
             <md-input-container>
-              <input md-input value="What is the color?" placeholder="Message" #message>
+              <input mdInput  value="What is the color?" placeholder="Message" #message>
             </md-input-container>
 
             <md-input-container>
-              <input md-input value="Yellow" placeholder="Action" #action>
+              <input mdInput  value="Yellow" placeholder="Action" #action>
             </md-input-container>
             <md-input-container>
-              <input md-input type="number" placeholder="Duration" [(ngModel)]="time">
+              <input mdInput  type="number" placeholder="Duration" [(ngModel)]="time">
             </md-input-container>
             <br>
             <button md-button (click)="openSnackBar(message.value, action.value)">Show Snack-bar</button>

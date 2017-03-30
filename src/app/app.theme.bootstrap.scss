@@ -4,8 +4,8 @@
 //----------------------------------------------------------------------------------------------------------------------
 body.light {
   section.bs {
-    $theme: md-light-theme($theme-primary, $theme-accent, $theme-warn);
-    $primary: map-get($theme, primary);
+    $theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+    $primary: map-get($theme, primary);//primary
     $accent: map-get($theme, accent);
     $warn: map-get($theme, warn);
     $background: map-get($theme, background);
@@ -1148,7 +1148,7 @@ body.light {
 //----------------------------------------------------------------------------------------------------------------------
 body.dark {
   section.bs {
-    $theme: md-dark-theme($theme-primary, $theme-accent, $theme-warn);
+    $theme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
     $primary: map-get($theme, primary);
     $accent: map-get($theme, accent);
     $warn: map-get($theme, warn);

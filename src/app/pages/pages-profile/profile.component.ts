@@ -137,7 +137,7 @@ export class PagesProfileComponent implements OnInit {
         //-----------
         if (!(data == null)) {
           //custom code
-          this.notifier = data.data.Info;
+          //this.notifier = data.data.Info;
         }
       });
   }

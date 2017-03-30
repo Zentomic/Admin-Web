@@ -3,7 +3,6 @@ import { ComponentDialogComponent } from './pages/component-dialog/component-dia
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ComponentButtonsComponent } from './pages/component-buttons/component-buttons.component';
 import { ComponentProgressComponent } from './pages/component-progress/component-progress.component';
-import { ChartsChartjsComponent } from './pages/charts-chartjs/charts-chartjs.component';
 import { TablesDynamicComponent } from './pages/tables-dynamic/tables-dynamic.component';
 import { MemberLocationComponent } from './pages/member-location/member-location.component';
 import { TablesBasicComponent } from './pages/tables-basic/tables-basic.component';
@@ -237,10 +236,10 @@ export const ROUTES: Routes = [
     path: 'member-location',
     component: MemberLocationComponent
   },
-  {
-    path: 'charts-chartjs',
-    component: ChartsChartjsComponent
-  },
+  //{
+  //  path: 'charts-chartjs',
+  //  component: ""
+  //},
   {
     path: 'charts-peity',
     component: ChartsPeityComponent

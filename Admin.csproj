@@ -85,7 +85,6 @@
     <Content Include="src\app\pages\apps-calendar\apps-calendar.component.html" />
     <Content Include="src\app\pages\apps-explorer\apps-explorer.component.html" />
     <Content Include="src\app\pages\apps-mail\apps-mail.component.html" />
-    <Content Include="src\app\pages\charts-chartjs\charts-chartjs.component.html" />
     <Content Include="src\app\pages\charts-peity\charts-peity.component.html" />
     <Content Include="src\app\pages\component-bootstrap\component-bootstrap.component.html" />
     <Content Include="src\app\pages\component-buttons\component-buttons.component.html" />
@@ -226,7 +225,6 @@
     <Content Include="src\app\pages\apps-calendar\apps-calendar.component.scss" />
     <Content Include="src\app\pages\apps-explorer\apps-explorer.component.scss" />
     <Content Include="src\app\pages\apps-mail\apps-mail.component.scss" />
-    <Content Include="src\app\pages\charts-chartjs\charts-chartjs.component.scss" />
     <Content Include="src\app\pages\charts-peity\charts-peity.component.scss" />
     <Content Include="src\app\pages\component-bootstrap\component-bootstrap.component.scss" />
     <Content Include="src\app\pages\component-buttons\component-buttons.component.scss" />
@@ -330,7 +328,6 @@
     <TypeScriptCompile Include="src\app\pages\apps-calendar\apps-calendar.component.ts" />
     <TypeScriptCompile Include="src\app\pages\apps-explorer\apps-explorer.component.ts" />
     <TypeScriptCompile Include="src\app\pages\apps-mail\apps-mail.component.ts" />
-    <TypeScriptCompile Include="src\app\pages\charts-chartjs\charts-chartjs.component.ts" />
     <TypeScriptCompile Include="src\app\pages\charts-peity\charts-peity.component.ts" />
     <TypeScriptCompile Include="src\app\pages\component-bootstrap\component-bootstrap.component.ts" />
     <TypeScriptCompile Include="src\app\pages\component-buttons\component-buttons.component.ts" />

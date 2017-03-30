@@ -3,8 +3,8 @@
  * Code by Tony Nguyen
  */
 
-const ZENTOMIC_SERVER = "http://localhost:9000";
-//const ZENTOMIC_SERVER = "https://zentomic-notifier-node.herokuapp.com";
+//const ZENTOMIC_SERVER = "http://localhost:9000";
+const ZENTOMIC_SERVER = "https://zentomic-notifier-node.herokuapp.com";
 
 export const ZENTOMIC_SERVICE = {
   login_local: ZENTOMIC_SERVER + "/login-local?email={{email}}&password={{password}}",

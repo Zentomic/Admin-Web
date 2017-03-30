@@ -16,7 +16,6 @@ import { ComponentDialogComponent } from './pages/component-dialog/component-dia
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ComponentButtonsComponent } from './pages/component-buttons/component-buttons.component';
 import { ComponentProgressComponent } from './pages/component-progress/component-progress.component';
-import { ChartsChartjsComponent } from './pages/charts-chartjs/charts-chartjs.component';
 import { TablesDynamicComponent } from './pages/tables-dynamic/tables-dynamic.component';
 import { TablesBasicComponent } from './pages/tables-basic/tables-basic.component';
 import { FormsTreeComponent } from './pages/forms-tree/forms-tree.component';
@@ -74,11 +73,11 @@ import { ChartModule } from './shared/chart/chart.module';
 import { MapModule } from './shared/maps/maps.module';
 import { MediaModule } from './shared/media/media.module';
 import { WidgetModule } from './shared/widget/widget.module';
-import { QuillModule } from 'ngx-quill/src/quill/quill.module';
+import { QuillModule } from 'ngx-quill/src/quill.module';
 import { CustomFormsModule } from 'ng2-validation';
 import { DashboardEdgeComponent } from './pages/dashboard-edge/dashboard-edge.component';
 import { TranslateStaticLoader, TranslateLoader, TranslateModule } from 'ng2-translate';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //---- my code
 import { MemberLocationComponent } from  './pages/member-location/member-location.component';
@@ -132,7 +131,6 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     TablesBasicComponent,
     TablesDynamicComponent,
     MemberLocationComponent,
-    ChartsChartjsComponent,
     ChartsPeityComponent,
     WidgetsComponent,
     LayoutFlexComponent,
@@ -151,7 +149,7 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     PagesProfileComponent,
     AppsCalendarComponent,
     AppsExplorerComponent,
-    AppsMailComponent,
+    AppsMailComponent
   
   ],
   imports: [
@@ -166,6 +164,7 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     MapModule,
     MediaModule,
     WidgetModule,
+    BrowserAnimationsModule,
     // Extra Plugin Imports
     NgxDatatableModule,
     // If you using lazy loading, var [preloadingStrategy] can change to PreloadAllModules or NoPreloading.
