@@ -27,7 +27,7 @@ lk-app {
   padding: 0;
   overflow: hidden;
 
-  > mat-toolbar {
+  > md-toolbar {
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
   }
 }
@@ -98,14 +98,14 @@ div.page-toolbar-right-content {
   }
 }
 
-mat-toolbar.page-footer {
+md-toolbar.page-footer {
   font-size: 14px;
 }
 
 //---------------------------------------------------------
 // Top nav
 //---------------------------------------------------------
-mat-toolbar.topnav-container {
+md-toolbar.topnav-container {
   position: fixed;
   z-index: 4;
   padding-right: 4px;
@@ -298,15 +298,15 @@ mat-sidenav-container {
 }
 
 //---------------------------------------------------------
-// mat-toolbar
+// md-toolbar
 //---------------------------------------------------------
-mat-toolbar {
+md-toolbar {
 
   .toolbar-filler {
     flex: 1 1 auto;
   }
 
-  mat-toolbar-row {
+  md-toolbar-row {
     h1.page-card-flexible-title {
       padding-left: 48px;
       font-size: 48px;
@@ -999,7 +999,7 @@ mat-card {
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  mat-toolbar.topnav-container {
+  md-toolbar.topnav-container {
     .topnav-search {
       display: inline;
       .md2-autocomplete-trigger.is-focused {
