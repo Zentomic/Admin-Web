@@ -1,8 +1,8 @@
 git add .
 
-git commit -m "deploy better"
+git commit -m "deploy Github"
 
-git remote add origin https://github.com/Zentomic/zentomic-notifier-node.git
+git remote add origin https://github.com/Zentomic/Admin-Web.git
 
 git remote -v
 
