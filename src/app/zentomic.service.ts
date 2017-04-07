@@ -5,7 +5,7 @@
 
 //const ZENTOMIC_SERVER = "http://localhost:9000";
 //const ZENTOMIC_SERVER = "https://zentomic-notifier-node.herokuapp.com";
-const ZENTOMIC_SERVER = "http://admin.realsafe.io";
+const ZENTOMIC_SERVER = "http://api.realsafe.io";
 
 export const ZENTOMIC_SERVICE = {
   login_local: ZENTOMIC_SERVER + "/Auth/Local?email={{email}}&password={{password}}",
