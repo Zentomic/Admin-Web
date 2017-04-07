@@ -4,7 +4,7 @@
  */
 
 //const ZENTOMIC_SERVER = "http://localhost:9000";
-const ZENTOMIC_SERVER = "http://zentomic-webadmin.herokuapp.com";
+const ZENTOMIC_SERVER = "https://zentomic-webadmin.herokuapp.com";
 
 export const ZENTOMIC_SERVICE = {
   login_local: ZENTOMIC_SERVER + "/Auth/Local?email={{email}}&password={{password}}",
