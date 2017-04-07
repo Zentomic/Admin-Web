@@ -67,7 +67,7 @@ export class PagesSigninComponent implements OnInit, OnDestroy {
       console.log(data);
 
       //-----------
-      if (!(data == null))
+      if (!(data.data == null))
       {
         
         // redirect to main page
@@ -99,7 +99,7 @@ export class PagesSigninComponent implements OnInit, OnDestroy {
           // we've got back the raw data, now generate the core schedule data
           console.log(data);
           //-----------
-          if (!(data == null)) {
+          if (!(data.data == null)) {
             // push it to service loginer for use later
 
             // redirect to main page
