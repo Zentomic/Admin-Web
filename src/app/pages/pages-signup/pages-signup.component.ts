@@ -87,7 +87,7 @@ export class PagesSignupComponent implements OnInit {
     params.set('fullname', this.user.fullname);
     params.set('password', this.user.password);
 
-    var response = this.http.get(ZENTOMIC_SERVICE.sign_up, { search: params} );
+    var response = this.http.post(ZENTOMIC_SERVICE.sign_up, { search: params} );
 
 
 
