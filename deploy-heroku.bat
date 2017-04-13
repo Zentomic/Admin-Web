@@ -1,6 +1,6 @@
 git add .
 
-git commit -m "deploy heroku zentomic-webadmin node better"
+git commit -m %1
 
 heroku login
 
