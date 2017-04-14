@@ -5,9 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, Http } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
-import { ZentomicAuthService } from './service/zentomic.auth';
 import { MaterialModule } from '@angular/material';
-import { Md2Module } from 'md2';
+import { Md2Module } from 'md2/module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, NoPreloading } from '@angular/router';
 import { DialogExampleComponent } from './shared/dialog/dialog-example/dialog-example.component';
@@ -16,6 +15,7 @@ import { ComponentDialogComponent } from './pages/component-dialog/component-dia
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ComponentButtonsComponent } from './pages/component-buttons/component-buttons.component';
 import { ComponentProgressComponent } from './pages/component-progress/component-progress.component';
+import { ChartsChartjsComponent } from './pages/charts-chartjs/charts-chartjs.component';
 import { TablesDynamicComponent } from './pages/tables-dynamic/tables-dynamic.component';
 import { TablesBasicComponent } from './pages/tables-basic/tables-basic.component';
 import { FormsTreeComponent } from './pages/forms-tree/forms-tree.component';
@@ -55,11 +55,6 @@ import { PagesErrorComponent } from './pages/pages-error/pages-error.component';
 import { PagesLockscreenComponent } from './pages/pages-lockscreen/pages-lockscreen.component';
 import { PagesInvoiceComponent } from './pages/pages-invoice/pages-invoice.component';
 import { PagesNotfoundComponent } from './pages/pages-notfound/pages-notfound.component';
-import { PagesSigninComponent } from './pages/pages-signin/pages-signin.component';
-import { PagesSignupComponent } from './pages/pages-signup/pages-signup.component';
-import { PagesSignoutComponent } from './pages/pages-signout/pages-signout.component';
-import { PagesSMSComponent } from './pages/pages-sms/pages-sms.component';
-import { PagesProfileComponent } from './pages/pages-profile/profile.component';
 import { AppsCalendarComponent } from './pages/apps-calendar/apps-calendar.component';
 import { AppsExplorerComponent } from './pages/apps-explorer/apps-explorer.component';
 import { AppsMailComponent } from './pages/apps-mail/apps-mail.component';
@@ -73,11 +68,18 @@ import { ChartModule } from './shared/chart/chart.module';
 import { MapModule } from './shared/maps/maps.module';
 import { MediaModule } from './shared/media/media.module';
 import { WidgetModule } from './shared/widget/widget.module';
-import { QuillModule } from 'ngx-quill/src/quill.module';
+import { QuillModule } from 'ngx-quill/src/quill/quill.module';
 import { CustomFormsModule } from 'ng2-validation';
 import { DashboardEdgeComponent } from './pages/dashboard-edge/dashboard-edge.component';
+import { DialogThemeComponent } from './shared/dialog/dialog-theme/dialog-theme.component';
 import { TranslateStaticLoader, TranslateLoader, TranslateModule } from 'ng2-translate';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { PagesSigninComponent } from './pages/pages-signin/pages-signin.component';
+import { PagesSignupComponent } from './pages/pages-signup/pages-signup.component';
+import { PagesSignoutComponent } from './pages/pages-signout/pages-signout.component';
+import { PagesSMSComponent } from './pages/pages-sms/pages-sms.component';
+import { PagesProfileComponent } from './pages/pages-profile/profile.component';
+import { ZentomicAuthService } from './service/zentomic.auth';
 
 //---- my code
 import { MemberLocationComponent } from  './pages/member-location/member-location.component';
@@ -164,7 +166,7 @@ import { MemberLocationComponent } from  './pages/member-location/member-locatio
     MapModule,
     MediaModule,
     WidgetModule,
-    BrowserAnimationsModule,
+
     // Extra Plugin Imports
     NgxDatatableModule,
     // If you using lazy loading, var [preloadingStrategy] can change to PreloadAllModules or NoPreloading.

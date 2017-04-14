@@ -163,12 +163,12 @@ md-toolbar.topnav-container {
 //---------------------------------------------------------
 //* Side nav
 //---------------------------------------------------------
-mat-sidenav-container {
+md-sidenav-container {
   width: 100%;
   max-width: 100%;
   height: 100%;
   max-height: 100%;
-  mat-sidenav.mat-sidenav-opened.mat-sidenav-side, mat-sidenav.mat-sidenav-side.mat-sidenav-opening {
+  md-sidenav.md-sidenav-opened.md-sidenav-side, md-sidenav.md-sidenav-side.md-sidenav-opening {
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .1), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
   }
   div.sidenav-container {
@@ -176,16 +176,16 @@ mat-sidenav-container {
     overflow-y: auto;
     overflow-x: hidden;
 
-    mat-list [mat-subheader], mat-nav-list [mat-subheader] {
+    md-list [md-subheader], md-nav-list [md-subheader] {
       height: 24px;
       padding: 4px 16px 4px 16px;
     }
 
-    div.mat-list-item {
+    div.md-list-item {
       font-size: 14px;
     }
 
-    div.mat-list-text {
+    div.md-list-text {
       a {
         overflow: hidden;
         text-overflow: clip;
@@ -212,17 +212,17 @@ mat-sidenav-container {
       padding-left: 48px;
     }
 
-    mat-nav-list {
+    md-nav-list {
       padding-top: 0;
       padding-bottom: 64px;
     }
   }
-  mat-sidenav.sidenav-collapse {
+  md-sidenav.sidenav-collapse {
     min-width: 0;
     div.sidenav-container {
       transition: all .32s;
       width: 48px;
-      div.mat-list-item {
+      div.md-list-item {
         padding-right: 0;
       }
       .sidenav-collapse-item {
@@ -231,15 +231,15 @@ mat-sidenav-container {
       span.label {
         display: none;
       }
-      mat-list-item.sidenav-menu-sub {
+      md-list-item.sidenav-menu-sub {
         display: none;
       }
     }
   }
-  mat-sidenav.sidenav-collapse:hover {
+  md-sidenav.sidenav-collapse:hover {
     div.sidenav-container {
       width: 280px;
-      div.mat-list-item {
+      div.md-list-item {
         padding-right: 16px;
       }
       .sidenav-collapse-item {
@@ -248,7 +248,7 @@ mat-sidenav-container {
       span.label {
         display: inline-block;
       }
-      mat-list-item.sidenav-menu-sub {
+      md-list-item.sidenav-menu-sub {
         display: block;
       }
     }
@@ -270,7 +270,7 @@ mat-sidenav-container {
 //---------------------------------------------------------
 //* Message panel
 //---------------------------------------------------------
-mat-sidenav-container {
+md-sidenav-container {
   div.message-panel {
     width: 320px;
     overflow-y: auto;
@@ -315,10 +315,10 @@ md-toolbar {
     }
   }
 
-  .mat-toolbar-nav-with-fab {
+  .md-toolbar-nav-with-fab {
     padding-left: 86px;
 
-    button.mat-toolbar-nav-fab {
+    button.md-toolbar-nav-fab {
       margin-left: -86px;
       margin-top: 20px;
       position: fixed;
@@ -326,16 +326,16 @@ md-toolbar {
     }
   }
 
-  .mat-toolbar-nav {
+  .md-toolbar-nav {
     display: inline-block;
 
-    .mat-toolbar-nav-title {
+    .md-toolbar-nav-title {
       padding: 0 2px;
       font-size: 24px;
       font-weight: 300;
     }
 
-    .mat-toolbar-nav-icon {
+    .md-toolbar-nav-icon {
       margin-right: 32px;
       margin-left: 2px;
 
@@ -348,16 +348,16 @@ md-toolbar {
 }
 
 //---------------------------------------------------------
-// mat-tab
+// md-tab
 //---------------------------------------------------------
 div.tab-body-content {
   padding: 16px;
 }
 
 //---------------------------------------------------------
-// mat-list
+// md-list
 //---------------------------------------------------------
-mat-list.mat-list-with-fab {
+md-list.md-list-with-fab {
   padding: 0 16px;
 }
 
@@ -365,9 +365,9 @@ mat-list.mat-list-with-fab {
   width: 100%;
   padding: 16px;
 
-  mat-list-item {
-    div.mat-list-item {
-      div.mat-list-text {
+  md-list-item {
+    div.md-list-item {
+      div.md-list-text {
         a {
           i {
             margin-right: 16px;
@@ -383,10 +383,10 @@ mat-list.mat-list-with-fab {
 }
 
 //---------------------------------------------------------
-// mat-card
+// md-card
 //---------------------------------------------------------
-mat-card {
-  mat-card-title {
+md-card {
+  md-card-title {
     .card-title-filler {
       flex: 1 1 auto;
     }
@@ -396,67 +396,67 @@ mat-card {
       right: 16px;
       margin-top: -4px;
     }
-    mat-chip-list {
+    md-chip-list {
       position: absolute;
       right: 64px;
     }
   }
 }
 
-mat-card.page-card {
+md-card.page-card {
   margin: 8px;
-  mat-card-header {
-    mat-card-title, mat-card-subtitle {
+  md-card-header {
+    md-card-title, md-card-subtitle {
       margin-bottom: 8px;
     }
   }
 }
 
-mat-card.page-card-flexible {
+md-card.page-card-flexible {
   margin-top: -64px;
 }
 
-mat-card.page-card-flexible-tabs, div.page-card-flexible-tabs {
+md-card.page-card-flexible-tabs, div.page-card-flexible-tabs {
   margin-top: -48px;
   padding: 0;
-  mat-card-actions {
+  md-card-actions {
     padding-left: 32px;
   }
 }
 
-mat-card.card-content-full {
+md-card.card-content-full {
   padding: 24px 0 0 0;
   .card-title-filler {
     flex: 1 1 auto;
   }
-  mat-card-title, mat-card-subtitle, mat-card-header, mat-card-actions, mat-card-footer {
+  md-card-title, md-card-subtitle, md-card-header, md-card-actions, md-card-footer {
     padding: 0 24px 0 24px;
   }
 }
 
-mat-card.card-content-tabs {
+md-card.card-content-tabs {
   padding-top: 0;
 }
 
-mat-card.page-card-padding-bottom {
+md-card.page-card-padding-bottom {
   padding-bottom: 24px;
-  mat-card-actions {
+  md-card-actions {
     margin-bottom: 0;
     padding: 8px 24px;
   }
 }
 
 //---------------------------------------------------------
-// mat-input
+// md-input
 //---------------------------------------------------------
-mat-input-container {
+md-input-container {
   width: 100%;
 }
 
 //---------------------------------------------------------
-//* mat-input
+//* md-input
 //---------------------------------------------------------
-span.mat-button-wrapper {
+span.md-button-wrapper {
   span.notify {
     position: absolute;
     border-radius: 50%;
@@ -488,9 +488,9 @@ span.mat-button-wrapper {
 }
 
 //---------------------------------------------------------
-//* mat-menu
+//* md-menu
 //---------------------------------------------------------
-div.mat-menu-content {
+div.md-menu-content {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -536,7 +536,7 @@ div.mat-menu-content {
 //---------------------------------------------------------
 //* card-form
 //---------------------------------------------------------
-i.card-form-input-icon, mat-icon.card-form-input-icon {
+i.card-form-input-icon, md-icon.card-form-input-icon {
   padding-top: 16px;
   margin-right: 8px;
 }
@@ -548,23 +548,23 @@ div.card-form-input {
   section.card-form-section {
     padding-top: 8px;
     padding-right: 8px;
-    div.mat-radio-label-content {
+    div.md-radio-label-content {
       padding-right: 8px;
       font-size: 14px;
     }
-    div.mat-radio-container {
+    div.md-radio-container {
       width: 16px;
       height: 16px;
     }
-    .mat-radio-inner-circle, .mat-radio-outer-circle {
+    .md-radio-inner-circle, .md-radio-outer-circle {
       width: 16px;
       height: 16px;
     }
   }
-  .mat-checkbox-label {
+  .md-checkbox-label {
     font-size: 14px;
   }
-  .mat-checkbox-inner-container {
+  .md-checkbox-inner-container {
     width: 16px;
     height: 16px;
   }
@@ -592,14 +592,14 @@ div.card-form-input {
 
 }
 
-@include toolbar-responsive-height($mat-toolbar-height-desktop);
+@include toolbar-responsive-height($md-toolbar-height-desktop);
 
-@media ($mat-xsmall) and (orientation: portrait) {
-  @include toolbar-responsive-height($mat-toolbar-height-mobile-portrait);
+@media ($md-xsmall) and (orientation: portrait) {
+  @include toolbar-responsive-height($md-toolbar-height-mobile-portrait);
 }
 
-@media ($mat-small) and (orientation: landscape) {
-  @include toolbar-responsive-height($mat-toolbar-height-mobile-landscape);
+@media ($md-small) and (orientation: landscape) {
+  @include toolbar-responsive-height($md-toolbar-height-mobile-landscape);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -608,7 +608,7 @@ div.card-form-input {
 //---------------------------------------------------------
 //* info-tile
 //---------------------------------------------------------
-mat-card.widget-tile {
+md-card.widget-tile {
   height: 84px;
   margin: 8px;
   padding: 0;
@@ -681,8 +681,8 @@ mat-card.widget-tile {
 //* Extra
 //----------------------------------------------------------------------------------------------------------------------
 
-mat-card.widget-weather {
-  mat-card-title {
+md-card.widget-weather {
+  md-card-title {
     text-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     color: white;
     p {
@@ -691,7 +691,7 @@ mat-card.widget-weather {
       opacity: 0.6;
     }
   }
-  mat-card-content {
+  md-card-content {
     background-size: cover;
     height: 280px;
     div.weather-background {
@@ -747,8 +747,8 @@ mat-card.widget-weather {
   }
 }
 
-mat-card {
-  mat-card-subtitle {
+md-card {
+  md-card-subtitle {
     .counter-group {
       display: inline-flex;
       .counter {
@@ -862,7 +862,7 @@ mat-card {
     font-size: 16px;
   }
 
-  .mat-tab-body-wrapper h2 {
+  .md-tab-body-wrapper h2 {
     margin-top: 0;
   }
 
@@ -942,53 +942,53 @@ mat-card {
 
   .md2-datepicker-input {
     md2-datepicker.ng-invalid.ng-touched:not(.md2-datepicker-disabled) & {
-      color: mat-color($warn);
-      border-bottom: 1px solid mat-color($warn);
+      color: md-color($warn);
+      border-bottom: 1px solid md-color($warn);
     }
   }
   .md2-datepicker-placeholder {
     md2-datepicker:focus & {
-      color: mat-color($primary);
+      color: md-color($primary);
     }
   }
   .md2-datepicker-header {
-    background: mat-color($primary);
+    background: md-color($primary);
   }
   .md2-years {
     .md2-year {
       &.selected {
-        color: mat-color($primary);
+        color: md-color($primary);
       }
     }
   }
   .md2-calendar-day {
     &.today {
-      color: mat-color($primary);
+      color: md-color($primary);
     }
     &.selected,
     &.selected:hover {
-      background: mat-color($primary);
+      background: md-color($primary);
     }
   }
   .md2-clock-hour,
   .md2-clock-minute {
     &:hover {
-      background: lighten(mat-color($primary), 25);
+      background: lighten(md-color($primary), 25);
     }
   }
   .md2-clock-hand {
     line {
-      stroke: mat-color($primary);
+      stroke: md-color($primary);
     }
   }
   .md2-clock-bg {
-    fill: lighten(mat-color($primary), 25);
+    fill: lighten(md-color($primary), 25);
   }
   .md2-clock-fg {
-    fill: mat-color($primary);
+    fill: md-color($primary);
   }
   .md2-clock-center {
-    fill: mat-color($primary);
+    fill: md-color($primary);
   }
 }
 
@@ -1020,7 +1020,7 @@ mat-card {
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  mat-list-item.active {
+  md-list-item.active {
     background-color: map-get($background, disabled-button);
   }
 
@@ -1076,11 +1076,11 @@ mat-card {
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
   a.menu-block-btn:hover {
-    background-color: mat-color($background, disabled-button);
+    background-color: md-color($background, disabled-button);
   }
   a.menu-block-btn {
     span {
-      color: mat-color($foreground, text);;
+      color: md-color($foreground, text);;
     }
   }
 }
@@ -1092,8 +1092,8 @@ mat-card {
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  mat-card {
-    mat-card-subtitle {
+  md-card {
+    md-card-subtitle {
       color: map-get($foreground, text);
       h4 {
         color: map-get($foreground, text);
@@ -1124,15 +1124,15 @@ mat-card {
   $foreground: map-get($theme, foreground);
 
   .bg-primary {
-    background-color: mat-color($primary);
+    background-color: md-color($primary);
   }
 
   .bg-accent {
-    background-color: mat-color($accent);
+    background-color: md-color($accent);
   }
 
   .bg-warn {
-    background-color: mat-color($warn);
+    background-color: md-color($warn);
   }
 
   ::-webkit-scrollbar-thumb {
@@ -1150,16 +1150,16 @@ mat-card {
 
   .docs-guide-content {
     h1 {
-      color: mat-color($primary, 800);
-      background: rgba(mat-color($foreground, secondary-text), .03);
+      color: md-color($primary, 800);
+      background: rgba(md-color($foreground, secondary-text), .03);
     }
 
     h3, h2, h4, h5, p, ol, li {
-      color: mat-color($foreground, secondary-text);
+      color: md-color($foreground, secondary-text);
     }
 
     a {
-      color: mat-color($primary);
+      color: md-color($primary);
     }
 
     table {
@@ -1167,17 +1167,17 @@ mat-card {
     }
 
     table tbody th {
-      border: 1px solid rgba(mat-color($foreground, secondary-text), .03);
+      border: 1px solid rgba(md-color($foreground, secondary-text), .03);
     }
 
     td {
-      color: mat-color($foreground, secondary-text);
-      border: 1px solid rgba(mat-color($foreground, secondary-text), .03);
+      color: md-color($foreground, secondary-text);
+      border: 1px solid rgba(md-color($foreground, secondary-text), .03);
     }
 
     th {
-      color: mat-color($foreground, secondary-text);
-      background: rgba(mat-color($foreground, secondary-text), .03);
+      color: md-color($foreground, secondary-text);
+      background: rgba(md-color($foreground, secondary-text), .03);
     }
   }
 }
@@ -1190,80 +1190,80 @@ mat-card {
   $foreground: map-get($theme, foreground);
 
   .datatable.material {
-    background: mat-color($background, background);
+    background: md-color($background, background);
   }
   .datatable.material.striped .datatable-row-odd {
-    background: mat-color($background, disabled-button);
+    background: md-color($background, disabled-button);
   }
   .datatable.material.single-selection .datatable-body-row.active,
   .datatable.material.single-selection .datatable-body-row.active .datatable-row-group, .datatable.material.multi-selection .datatable-body-row.active,
   .datatable.material.multi-selection .datatable-body-row.active .datatable-row-group, .datatable.material.multi-click-selection .datatable-body-row.active,
   .datatable.material.multi-click-selection .datatable-body-row.active .datatable-row-group {
-    background-color: mat-color($primary);
-    color: mat-color($foreground, text);
+    background-color: md-color($primary);
+    color: md-color($foreground, text);
   }
   .datatable.material.single-selection .datatable-body-row.active:hover,
   .datatable.material.single-selection .datatable-body-row.active:hover .datatable-row-group, .datatable.material.multi-selection .datatable-body-row.active:hover,
   .datatable.material.multi-selection .datatable-body-row.active:hover .datatable-row-group, .datatable.material.multi-click-selection .datatable-body-row.active:hover,
   .datatable.material.multi-click-selection .datatable-body-row.active:hover .datatable-row-group {
-    background-color: mat-color($primary);
-    color: mat-color($foreground, text);
+    background-color: md-color($primary);
+    color: md-color($foreground, text);
   }
   .datatable.material.single-selection .datatable-body-row.active:focus,
   .datatable.material.single-selection .datatable-body-row.active:focus .datatable-row-group, .datatable.material.multi-selection .datatable-body-row.active:focus,
   .datatable.material.multi-selection .datatable-body-row.active:focus .datatable-row-group, .datatable.material.multi-click-selection .datatable-body-row.active:focus,
   .datatable.material.multi-click-selection .datatable-body-row.active:focus .datatable-row-group {
-    background-color: mat-color($primary);
-    color: mat-color($foreground, text);
+    background-color: md-color($primary);
+    color: md-color($foreground, text);
   }
   .datatable.material:not(.cell-selection) .datatable-body-row:hover,
   .datatable.material:not(.cell-selection) .datatable-body-row:hover .datatable-row-group {
-    background-color: mat-color($background, disabled-button);
+    background-color: md-color($background, disabled-button);
   }
   .datatable.material:not(.cell-selection) .datatable-body-row:focus,
   .datatable.material:not(.cell-selection) .datatable-body-row:focus .datatable-row-group {
-    background-color: mat-color($background, disabled-button);
+    background-color: md-color($background, disabled-button);
   }
   .datatable.material.cell-selection .datatable-body-cell:hover,
   .datatable.material.cell-selection .datatable-body-cell:hover .datatable-row-group {
-    background-color: mat-color($background, disabled-button);
+    background-color: md-color($background, disabled-button);
   }
   .datatable.material.cell-selection .datatable-body-cell:focus,
   .datatable.material.cell-selection .datatable-body-cell:focus .datatable-row-group {
-    background-color: mat-color($background, disabled-button);
+    background-color: md-color($background, disabled-button);
   }
   .datatable.material.cell-selection .datatable-body-cell.active,
   .datatable.material.cell-selection .datatable-body-cell.active .datatable-row-group {
-    background-color: mat-color($primary);
-    color: mat-color($foreground, text);
+    background-color: md-color($primary);
+    color: md-color($foreground, text);
   }
   .datatable.material.cell-selection .datatable-body-cell.active:hover,
   .datatable.material.cell-selection .datatable-body-cell.active:hover .datatable-row-group {
-    background-color: mat-color($primary);
-    color: mat-color($foreground, text);
+    background-color: md-color($primary);
+    color: md-color($foreground, text);
   }
   .datatable.material.cell-selection .datatable-body-cell.active:focus,
   .datatable.material.cell-selection .datatable-body-cell.active:focus .datatable-row-group {
-    background-color: mat-color($primary);
-    color: mat-color($foreground, text);
+    background-color: md-color($primary);
+    color: md-color($foreground, text);
   }
   .datatable.material .datatable-header .datatable-row-left,
   .datatable.material .datatable-body .datatable-row-left {
-    background-color: mat-color($foreground, text);
+    background-color: md-color($foreground, text);
   }
   .datatable.material .datatable-header .datatable-row-right,
   .datatable.material .datatable-header .datatable-header-cell.longpress {
-    color: mat-color($accent);
+    color: md-color($accent);
   }
   .datatable.material .datatable-body .datatable-row-detail {
-    background: mat-color($background, background);
+    background: md-color($background, background);
   }
   .datatable.material .datatable-body .progress-linear .container {
-    background-color: mat-color($background, background);
+    background-color: md-color($background, background);
   }
   .datatable.material .datatable-footer .datatable-pager a:hover {
-    color: mat-color($background, disabled-button);
-    background-color: mat-color($background, background);
+    color: md-color($background, disabled-button);
+    background-color: md-color($background, background);
   }
   .datatable-checkbox input[type='checkbox']:after {
     content: "";
@@ -1272,7 +1272,7 @@ mat-card {
     left: 0;
     width: 1rem;
     height: 1rem;
-    background: mat-color($background, background);;
+    background: md-color($background, background);;
     cursor: pointer;
   }
 }
@@ -1285,12 +1285,12 @@ mat-card {
   $foreground: map-get($theme, foreground);
 
   .fc-unthemed td.fc-today {
-    background: mat-color($primary, 0.3);
+    background: md-color($primary, 0.3);
   }
 
   .fc-event, .fc-event-dot {
-    border-color: mat-color($primary, 0.8);
-    background: mat-color($primary, 0.6);
+    border-color: md-color($primary, 0.8);
+    background: md-color($primary, 0.6);
   }
 }
 
@@ -1301,12 +1301,12 @@ mat-card {
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
   .breadcrumb > li > a {
-    color: mat-color($primary);
+    color: md-color($primary);
   }
   .pager li > a, .pager li > span {
     background-color: map-get($background, card);
     border: 1px solid map-get($foreground, divider);
-    color: mat-color($primary);
+    color: md-color($primary);
   }
   .table tbody tr td.cell-detail .cell-detail-description {
     color: map-get($foreground, secondary-text);
@@ -1317,7 +1317,7 @@ mat-card {
 // Mixin light theme
 //----------------------------------------------------------------------------------------------------------------------
 body.light {
-  $theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+  $theme: md-light-theme($theme-primary, $theme-accent, $theme-warn);
   @include angular-material-theme($theme);
   @include quill-theme($theme);
   @include md2-datepicker-theme($theme);
@@ -1338,7 +1338,7 @@ body.light {
 // Mixin dark theme
 //----------------------------------------------------------------------------------------------------------------------
 body.dark {
-  $theme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
+  $theme: md-dark-theme($theme-primary, $theme-accent, $theme-warn);
   @include angular-material-theme($theme);
   @include quill-theme($theme);
   @include md2-datepicker-theme($theme);

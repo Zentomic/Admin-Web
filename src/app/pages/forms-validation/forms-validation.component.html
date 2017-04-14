@@ -8,14 +8,14 @@
           <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex="50">
             <div class="card-form-input" fxflex>
               <md-input-container>
-                <input mdInput  placeholder="First name" type="text"
+                <input md-input  placeholder="First name" type="text"
                        [(ngModel)]="forms.firstName" name="firstName" #firstName="ngModel" required>
               </md-input-container>
               <p class="text-danger" *ngIf="firstName.errors?.required">You must include a first name.</p>
             </div>
             <div class="card-form-input" fxflex>
               <md-input-container>
-                <input mdInput  placeholder="Last name" type="text"
+                <input md-input  placeholder="Last name" type="text"
                        [(ngModel)]="forms.lastName" name="lastName" #lastName="ngModel" required>
               </md-input-container>
               <p class="text-danger" *ngIf="lastName.errors?.required">You must include a last name.</p>
@@ -41,7 +41,7 @@
           <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex="50">
             <div class="card-form-input" fxflex>
               <md-input-container>
-                <input mdInput  placeholder="Password" type="password"
+                <input md-input  placeholder="Password" type="password"
                        [(ngModel)]="forms.password" name="password" #password="ngModel" [rangeLength]="[8, 32]"
                        required>
               </md-input-container>
@@ -52,7 +52,7 @@
           <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex="50">
             <div class="card-form-input" fxflex>
               <md-input-container>
-                <input mdInput  placeholder="Certain password" type="password"
+                <input md-input  placeholder="Certain password" type="password"
                        [(ngModel)]="forms.certainPassword" name="certainPassword" #certainPassword="ngModel" required
                        [equalTo]="password">
               </md-input-container>
@@ -72,7 +72,7 @@
             <md-icon class="card-form-input-icon" fxflex>language</md-icon>
             <div class="card-form-input" fxflex>
               <md-input-container>
-                <input mdInput  placeholder="Web site" type="text"
+                <input md-input  placeholder="Web site" type="text"
                        [(ngModel)]="forms.url" name="url" #url="ngModel" url>
               </md-input-container>
               <p class="text-danger" *ngIf="url?.errors?.url">You must include a web site url.</p>
@@ -82,7 +82,7 @@
             <md-icon class="card-form-input-icon" fxflex>label_outline</md-icon>
             <div class="card-form-input" fxflex="30" fxLayout="column">
               <md-input-container>
-                <input mdInput  placeholder="code" type="text"
+                <input md-input  placeholder="code" type="text"
                        [(ngModel)]="forms.code" name="code" #code="ngModel" digits>
               </md-input-container>
               <p class="text-danger" *ngIf="code?.errors?.digits">You must include a code in digits.</p>
@@ -90,7 +90,7 @@
             <md-icon class="card-form-input-icon" fxflex>home</md-icon>
             <div class="card-form-input" fxflex="70" fxLayout="column">
               <md-input-container>
-                <input mdInput  placeholder="Address" type="text"
+                <input md-input  placeholder="Address" type="text"
                        [(ngModel)]="forms.addr" name="addr" #addr="ngModel">
               </md-input-container>
             </div>

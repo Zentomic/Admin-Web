@@ -26,7 +26,8 @@
         "../node_modules/weathericons/css/weather-icons.css",
         "../node_modules/weathericons/css/weather-icons-wind.css",
         "../node_modules/@swimlane/ngx-datatable/release/assets/icons.css",
-        "../node_modules/@swimlane/ngx-datatable/release/themes/material.css",
+        "../node_modules/@swimlane/ngx-datatable/release/datatable.css",
+        "../node_modules/@swimlane/ngx-datatable/release/material.css",
         "../node_modules/fullcalendar/dist/fullcalendar.css",
         "../node_modules/github-markdown-css/github-markdown.css",
         "styles.scss"
@@ -42,8 +43,8 @@
         "../node_modules/fullcalendar/dist/fullcalendar.min.js",
         "../node_modules/jquery-fullscreen-plugin/jquery.fullscreen-min.js"
       ],
-      "environmentSource": "environments/environment.ts",
       "environments": {
+        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts",
         "cordova": "environments/environment.cordova.ts",

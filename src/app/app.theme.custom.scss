@@ -13,8 +13,8 @@
   // Custom your theme here with material palette.
 
   //body {
-  //  background-color: mat-color($background, background);
-  //  color: mat-color($primary);
+  //  background-color: md-color($background, background);
+  //  color: md-color($primary);
   //}
 }
 
@@ -22,7 +22,7 @@
 // Mixin light theme
 //----------------------------------------------------------------------------------------------------------------------
 body.light {
-  $theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+  $theme: md-light-theme($theme-primary, $theme-accent, $theme-warn);
   @include custom-theme($theme);
 }
 
@@ -30,6 +30,6 @@ body.light {
 // Mixin dark theme
 //----------------------------------------------------------------------------------------------------------------------
 body.dark {
-  $theme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
+  $theme: md-dark-theme($theme-primary, $theme-accent, $theme-warn);
   @include custom-theme($theme);
 }
