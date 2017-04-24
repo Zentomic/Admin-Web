@@ -1,69 +1,98 @@
 <div class="page-content">
 
   <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxFlex>
-    <md-card class="page-card" fxFlex>
-      <md-card-content>
-        <div fxLayout="row" fxFlex>
-          <div fxFlex="50">
-            <h3>{{user.fullname}} {{user.displayName}}</h3>
-            <span md-line>{{user.email}}</span>
-            <span md-line>{{user.Location}}</span>
-            <p md-line>
-              <button md-raised-button color="primary"  (click)="onEvent('checkin')">Checkin</button>
-            </p>
+    <div class="sign-container">
+      <div class="sign-background"></div>
+      <md-card class="sign-card" fxFlex>
+        <md-card-content>
+          <!--<h3>{{user.fullname}} {{user.displayName}}</h3>
+   <span md-line>{{user.email}}</span>
+   <span md-line>{{user.Location}}</span>-->
+          <img src="assets/img/avatar.jpg" height="96" width="96" style="border-radius: 50%;">
+          <md-input-container>
+            <input md-input type="text" placeholder="First Name" value="James">
+          </md-input-container>
+          <md-input-container>
+            <input md-input type="text" placeholder="Middle Name" value="Witt">
+          </md-input-container>
+          <md-input-container>
+            <input md-input type="text" placeholder="Last Name" value="Bonds">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input type="email" placeholder="Email" value="Email@realsafe.io">
+          </md-input-container>
+          <md-input-container>
+            <input md-input type="text" placeholder="Phone" value="6047606726">
+          </md-input-container>
+          <md-input-container>
+            <input md-input type="password" placeholder="Password" value="123">
+          </md-input-container>
+
+          <p md-line>
+            <button md-raised-button color="primary" (click)="onEvent('checkin')">Checkin</button>
+            <button md-raised-button color="primary" (click)="onEvent('save')">Save</button>
+          </p>
+         
+          <!--<div fxLayout="row" fxFlex>
+            <div fxFlex="50">
+           
+            </div>
+            <div fxFlex="50" style="text-align: right;margin: auto;">
+              <img src="assets/img/avatar.jpg" height="96" width="96" style="border-radius: 50%;">
+            </div>
+          </div>-->
+        </md-card-content>
+        <!--<hr>
+        <div class="bottom-block" fxLayout="row" fxFlex>
+          <div class="bottom-content" fxFlex>
+            <p>54</p>
+            <span>POST</span>
           </div>
-          <div fxFlex="50" style="text-align: right;margin: auto;">
-            <img src="assets/img/avatar.jpg" height="96" width="96" style="border-radius: 50%;">
+          <div class="bottom-content" fxFlex>
+            <p>4235</p>
+            <span>FOLLOWERS</span>
           </div>
-        </div>
-      </md-card-content>
-      <hr>
-      <div class="bottom-block" fxLayout="row" fxFlex>
-        <div class="bottom-content" fxFlex>
-          <p>54</p>
-          <span>POST</span>
-        </div>
-        <div class="bottom-content" fxFlex>
-          <p>4235</p>
-          <span>FOLLOWERS</span>
-        </div>
-        <div class="bottom-content" fxFlex>
-          <p>892</p>
-          <span>WATCH</span>
-        </div>
-      </div>
-    </md-card>
+          <div class="bottom-content" fxFlex>
+            <p>892</p>
+            <span>WATCH</span>
+          </div>
+        </div>-->
+      </md-card>
+    </div>
 
   </div>
+
   <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxFlex>
     <div class="sign-container">
       <div class="sign-background"></div>
       <md-card class="sign-card">
-        <md-card-title>Setting Notifier</md-card-title>
+        <md-card-title>Setting</md-card-title>
         <md-card-subtitle></md-card-subtitle>
         <br>
         <md-card-content>
           <md-input-container>
-            <input md-input  type="text" placeholder="Notifier name" value="" >
+            <input md-input type="text" placeholder="Duration" value="">
           </md-input-container>
 
           <md-input-container>
-            <input md-input  type="text" placeholder="Phone number" value="">
+            <input md-input type="text" placeholder="Message" value="">
           </md-input-container>
 
           <md-input-container>
-            <input md-input  type="text" placeholder="Email" value="" >
+            <input md-input type="text" placeholder="type" value="sms">
           </md-input-container>
-
 
         </md-card-content>
         <md-card-actions>
           <button md-raised-button color="primary" (click)="onEvent('save')">Save</button>
 
-         
+
           <br>
         </md-card-actions>
       </md-card>
+
+
     </div>
   </div>
 </div>

@@ -3,12 +3,12 @@
   "version": "1.2.9",
   "private": true,
   "engines": {
-    "node": "6.9.5",
-    "npm": "3.10.10"
+    "node": "7.9.0",
+    "npm": "4.2.0"
   },
   "scripts": {
     "ng": "ng",
-    "start": "harp server --port 4200",
+    "start": "ng serve",
     "electron:run": "npm run electron:pre && electron ./dist/electron/electron.js",
     "electron:run-win": "npm run electron:pre-win && electron ./dist/electron/electron.js",
     "electron:pre": "mkdir -p dist/electron/ && cp src/electron/* dist/electron/",
@@ -38,7 +38,8 @@
     "pack:electron-linux64": "npm run electron:pre && npm run pack:electron -- --platform=linux --arch=x64 --icon=src/electron/app.ico",
     "pack:electron-linux32": "npm run electron:pre && npm run pack:electron -- --platform=linux --arch=ia32 --icon=src/electron/app.ico",
     "pack:cordova-ios": "cordova platform add ios && cordova build ios",
-    "pack:cordova-android": "cordova platform add ios && cordova build android"
+    "pack:cordova-android": "cordova platform add ios && cordova build android",
+    "postinstall": "ng build --aot -prod"
   },
   "dependencies": {
     "@angular/cli": "1.0.0-beta.30",
@@ -83,7 +84,6 @@
     "github-markdown-css": "^2.4.1",
     "gzippo": "^0.2.0",
     "hammerjs": "^2.0.8",
-    "harp": "^0.23.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "jquery": "^3.1.1",

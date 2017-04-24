@@ -2,6 +2,10 @@
 
 @include md-core();
 
-$theme-primary: md-palette($md-teal);
+/*$theme-primary: md-palette($md-teal);
+$theme-accent: md-palette($md-amber, A200, A100, A400);
+$theme-warn: md-palette($md-red);*/
+
+$theme-primary: md-palette($md-blue);
 $theme-accent: md-palette($md-amber, A200, A100, A400);
 $theme-warn: md-palette($md-red);
