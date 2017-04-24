@@ -1,1 +1,1 @@
- web: harp server.js --port 4200
+ web: harp server --port $PORT
